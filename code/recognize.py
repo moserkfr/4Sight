@@ -18,7 +18,7 @@ CORS(app)
 BASE_DIR = os.path.dirname(__file__)
 ENCODING_PATH = os.path.join(BASE_DIR, '..', 'data', 'encodings', 'student_encodings.pkl')
 ATTENDANCE_FILE = os.path.join(BASE_DIR, '..', 'data', 'attendance.csv')
-ESP32_STREAM_URL = "http://10.180.244.196/stream"  # Replace with actual ESP32 IP
+ESP32_STREAM_URL = "http://0.0.0.0/stream"  # Replace with actual ESP32 IP
 CONFIDENCE_THRESHOLD = 0.6
 
 # === Flask Route ===
