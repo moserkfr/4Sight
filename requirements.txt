@@ -1,0 +1,12 @@
+# Core
+numpy
+pandas
+opencv-python
+
+# Web
+flask
+flask-cors
+
+# Face Recognition
+dlib
+face_recognition

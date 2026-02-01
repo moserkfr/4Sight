@@ -1,0 +1,171 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Homepage Styles */
+.app {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(167, 175, 214, 0.85), rgba(0, 0, 0, 0.9)),
+    url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 4rem 10%;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.7);
+  z-index: 0;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 12rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  position: relative;
+  z-index: 1;
+}
+
+.header .tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  opacity: 0.9;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.intro {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+.cta-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: white;
+  color: #0a0a2a;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 5, 30, 0.9), rgba(0, 10, 40, 0.95)),
+    url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 4rem 10%;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.back-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background: white;
+  color: #0a0a2a;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.present {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.status-badge.absent {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+}
