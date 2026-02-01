@@ -3,8 +3,8 @@
 #include <WebServer.h>
 
 // WiFi Credentials
-const char* ssid = "realme 9i 5G"; // Replace with your WiFi
-const char* password = "lmaolmao"; // Replace with your password
+const char* ssid = "WIFI_NAME"; // Replace with your WiFi
+const char* password = "WIFI PASSWORD"; // Replace with your password
 
 // Set up WebServer on port 80
 WebServer server(80);
